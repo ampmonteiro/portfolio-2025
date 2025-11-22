@@ -1,0 +1,15 @@
+{
+    "name": "Agostinho Monteiro",
+    "city": "Porto ( Portugal )",
+    "job": "Software Engineer | Web Developer ( Full-Stack )",
+    "jobShort": "Software Engineer | Web Developer",
+    "exp": "8+",
+    "degree": "Masters in Informatics Engineering - Graphic Systems and Multimedia",
+    "school": "ISEP",
+    "currentStack": [
+        "PHP",
+        "Postgres",
+        "Bootstrap 5"
+    ],
+    "schoolURL": "https://www.isep.ipp.pt"
+}

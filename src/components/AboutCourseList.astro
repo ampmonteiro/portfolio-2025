@@ -1,0 +1,55 @@
+---
+export interface Props {
+    values: {
+        title: string;
+        school: string;
+        year: number;
+    }[];
+}
+
+const { values } = Astro.props;
+---
+
+{
+    values.map(({ title, school, year }) => (
+        <section>
+            <p class="position"> {title}</p>
+            <p class="company"> {school}</p>
+            <p class="period">{year}</p>
+        </section>
+    ))
+}
+
+<style>
+    section {
+        margin-block-start: 1rem;
+        padding: 1rem 3.8rem;
+        border-bottom: 3px dotted var(--color-primary);
+        background-color: var(--bg-color-primary);
+    }
+
+    section:last-of-type {
+        border-bottom: unset;
+    }
+
+    .company,
+    .period,
+    .position {
+        margin-bottom: 2rem;
+    }
+
+    .position {
+        margin-top: 2rem;
+        font-weight: 900;
+        /* color: var(--color-primary-light); */
+    }
+
+    .company {
+        font-weight: 500;
+        /* color: var(--color-secundary); */
+    }
+
+    .period {
+        /* color: #585858; */
+    }
+</style>

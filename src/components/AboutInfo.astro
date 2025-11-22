@@ -1,0 +1,49 @@
+---
+export interface Props {
+    values: {
+        name: string;
+        city: string;
+        job: string;
+        exp: string;
+        degree: string;
+        school: string;
+        schoolURL: string;
+    };
+}
+
+const { values } = Astro.props;
+
+const { name, city, job, exp, degree, school, schoolURL } = values;
+// const name = 'Agostinho Monteiro';
+// const city = 'Porto ( Portugal )';
+// const job = 'Software Engineer | Web Developer ( Full-Stack )';
+// const exp = '8+';
+// const degree =
+//   'Masters in Informatics Engineering - Graphic Systems and Multimedia';
+// const school = 'ISEP';
+// const schoolLink = 'https://www.isep.ipp.pt/';
+---
+
+<section id="about-text">
+    <p>
+        My name is <strong> {name}</strong>, live in {city}.
+    </p>
+    <p>
+        {job},
+        <strong> with {exp} years</strong> of professional experience.
+    </p>
+    <p>
+        {degree}
+        at
+        <a href={schoolURL} target="_blank">{school}</a>.
+    </p>
+</section>
+
+<style>
+    #about-text {
+        background-color: var(--bg-color-primary);
+        padding: 2rem;
+        line-height: 3;
+        border-left: 2rem solid var(--bg-color-secundary);
+    }
+</style>

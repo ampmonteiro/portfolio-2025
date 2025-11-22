@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Accordion from '@components/Accordion.astro';
+
+import AboutInfo from '@components/AboutInfo.astro';
+import AboutWorkList from '@components/AboutWorkList.astro';
+import AboutCourseList from '@components/AboutCourseList.astro';
+
+import workList from '@json/work.json';
+import eduList from '@json/edu.json';
+import certList from '@json/cert.json';
+import me from '@json/me.json';
+---
+
+<Layout title="About me">
+    <article class="container">
+        <AboutInfo values={me} />
+
+        <Accordion title="Work Experience">
+            <AboutWorkList values={workList} />
+        </Accordion>
+
+        <Accordion title="Education">
+            <AboutCourseList values={eduList} />
+        </Accordion>
+
+        <Accordion title="Certifications">
+            <AboutCourseList values={certList} />
+        </Accordion>
+    </article>
+</Layout>

@@ -1,0 +1,104 @@
+---
+export interface Props {
+	values: {
+		title: string;
+		company: string;
+		period: string;
+		tech: string;
+		frameworks: string;
+		pkg: string;
+		db: string;
+		vcs: string;
+		software: string;
+	}[];
+}
+
+const { values } = Astro.props;
+---
+
+{
+	values.map(
+		({
+			title,
+			company,
+			period,
+			tech,
+			frameworks,
+			pkg,
+			db,
+			vcs,
+			software,
+		}) => (
+			<section>
+				<p class="position">{title}</p>
+				<p class="company"> {company}</p>
+				<p class="period"> {period}</p>
+				<dl>
+					<dt>Technologies:</dt>
+					<dd> {tech}</dd>
+					<dt>Frameworks | Libraries | API:</dt>
+					<dd> {frameworks} </dd>
+					<dt>Package managers:</dt>
+					<dd>{pkg}</dd>
+					<dt>Database:</dt>
+					<dd> {db ? db : '-'} </dd>
+					<dt>VCS:</dt>
+					<dd>{vcs ? vcs : '-'}</dd>
+					<dt>Software:</dt>
+					<dd>{software}</dd>
+				</dl>
+			</section>
+		),
+	)
+}
+
+<style>
+	section {
+		margin-block-start: 1rem;
+		padding: 1rem 3.8rem;
+		border-bottom: 3px dotted var(--color-primary);
+		background-color: var(--bg-color-primary);
+	}
+
+	section:last-of-type {
+		border-bottom: unset;
+	}
+
+	dl {
+		font-size: 1.6rem;
+		line-height: 2;
+		margin-bottom: 5rem;
+		/* color: #ffffffdb; */
+	}
+
+	dt {
+		font-weight: 500;
+		/* color: #ffffffdb; */
+	}
+
+	dd {
+		margin-left: 1.6rem;
+		letter-spacing: 0.8px;
+	}
+
+	.company,
+	.period,
+	.position {
+		margin-bottom: 2rem;
+	}
+
+	.position {
+		margin-top: 2rem;
+		font-weight: 900;
+		/* color: var(--color-primary-light); */
+	}
+
+	.company {
+		font-weight: 500;
+		/* color: var(--color-secundary); */
+	}
+
+	.period {
+		/* color: #585858; */
+	}
+</style>

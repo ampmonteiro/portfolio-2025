@@ -1,0 +1,206 @@
+---
+export interface Props {
+    title: string;
+    values: Array<{ value: string; url: string }>;
+}
+
+const { title, values } = Astro.props;
+
+const isActive = (page: string, title: string) => ({
+    active: title.toLowerCase() === page.toLocaleLowerCase(),
+});
+---
+
+<header id="main-header">
+    <section id="menu" class="container">
+        <a href="/" class="logo" title="Home">
+            &lt;AgostinhoMonteiro /&gt;
+        </a>
+
+        <details>
+            <summary>
+                <span></span>
+            </summary>
+        </details>
+        <nav>
+            <a href="/">HOME</a>
+            {
+                values.map((item) => (
+                    <a
+                        href={item.url}
+                        class:list={isActive(item.value, title)}
+                    >
+                        {item.value}
+                    </a>
+                ))
+            }
+        </nav>
+    </section>
+</header>
+
+<style>
+    /* HEADER */
+    header {
+        width: 100%;
+        min-height: 5.5rem;
+        background-color: var(--bg-menu);
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 5.5rem;
+    }
+
+    .logo {
+        color: var(--link-text-color);
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .logo:hover {
+        color: var(--link-text-color-active);
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Hide default summary marker */
+    summary {
+        list-style: none;
+        z-index: 2;
+        position: fixed;
+        top: 7rem;
+        right: 1rem;
+        padding: 2.3rem;
+        border-radius: 1rem;
+        /* background-color: #0164bc; */
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Single bar */
+    summary span {
+        width: 3rem;
+        height: 0.4rem;
+        background-color: var(--link-text-color-active);
+        border-radius: 1rem;
+        transition: background 0.3s ease;
+    }
+
+    details[open] summary span {
+        background: transparent;
+    }
+
+    /* Top bar */
+    /* Bottom bar */
+    summary span::before,
+    summary span::after {
+        content: '';
+        position: absolute;
+        width: 3rem;
+        height: 0.4rem;
+        background-color: var(--link-text-color-active);
+        border-radius: 1rem;
+        transition:
+            transform 0.3s ease,
+            top 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    /* Position top bar */
+    summary span::before {
+        top: 1.3rem;
+    }
+
+    /* Position bottom bar */
+    summary span::after {
+        bottom: 1.3rem;
+    }
+
+    /* Animate into X when details is open */
+
+    details[open] summary span::before {
+        top: 2.2rem;
+        transform: rotate(45deg);
+    }
+    details[open] summary span::after {
+        top: 2.2rem;
+        transform: rotate(-45deg);
+    }
+
+    details[open] ~ nav {
+        display: flex;
+        background-color: var(--overlay);
+    }
+
+    nav a {
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    nav a.active {
+        color: #fff;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    @media only screen and (min-width: 680px) {
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        section {
+            flex-direction: row;
+            align-items: unset;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            text-align: center;
+        }
+
+        nav,
+        details[open] ~ nav {
+            position: unset;
+            top: unset;
+            z-index: unset;
+            width: unset;
+            height: unset;
+            display: unset;
+        }
+
+        .logo {
+            padding: unset;
+            text-align: left;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: var(--bg-link-active);
+            color: var(--link-text-color-active);
+        }
+
+        details {
+            display: none;
+        }
+    }
+</style>

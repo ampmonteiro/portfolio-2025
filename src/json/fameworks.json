@@ -1,0 +1,242 @@
+[
+    {
+        "name": "AstroJS",
+        "context": {
+            "academic": "",
+            "professional": "",
+            "private": true
+        }
+    },
+    {
+        "name": "Symfony (7.1)",
+        "context": {
+            "academic": "",
+            "professional": "",
+            "private": true
+        }
+    },
+    {
+        "name": "Laravel",
+        "context": {
+            "academic": "",
+            "professional": "Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "CodeIgniter",
+        "context": {
+            "academic": "",
+            "professional": "Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "SlimPHP(v3)",
+        "context": {
+            "academic": "",
+            "professional": "NomadTech",
+            "private": false
+        }
+    },
+    {
+        "name": "SASS",
+        "context": {
+            "academic": "",
+            "professional": "NomadTech, Radio Popular",
+            "private": false
+        }
+    },
+    {
+        "name": "PrimeNG",
+        "context": {
+            "academic": "",
+            "professional": "NomadTech",
+            "private": false
+        }
+    },
+    {
+        "name": "Vue 3",
+        "context": {
+            "academic": "",
+            "professional": "",
+            "private": true
+        }
+    },
+    {
+        "name": "Canvas (Browser API)",
+        "context": {
+            "academic": "Thesis for Master Degree (ISEP).",
+            "professional": "Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "DOM (Browser API)",
+        "context": {
+            "academic": "HTML5 Course (ISPGAYA), Master Degree (ISEP).",
+            "professional": "CimpleCare, Improxy, EQS Global",
+            "private": true
+        }
+    },
+    {
+        "name": "ApexCharts (JS)",
+        "context": {
+            "academic": "",
+            "professional": "Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "Angular Material",
+        "context": {
+            "academic": "",
+            "professional": "Inventore (v5 - v8) ",
+            "private": true
+        }
+    },
+    {
+        "name": "Angular (2+)",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple (v2 - v4), Inventore (v5 - v8), NomadTech (v11-v13)",
+            "private": true
+        }
+    },
+    {
+        "name": "RxJS",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple, Inventore, NomadTech",
+            "private": true
+        }
+    },
+    {
+        "name": "TypeScript",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple, Inventore, NomadTech",
+            "private": true
+        }
+    },
+    {
+        "name": "MomentJS",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple, Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "W3.CSS",
+        "context": {
+            "academic": "",
+            "professional": "",
+            "private": true
+        }
+    },
+    {
+        "name": "Animate.CSS",
+        "context": {
+            "academic": "",
+            "professional": "Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "Twitter Bootstrap v4",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple and Inventore, NomadTech ",
+            "private": false
+        }
+    },
+    {
+        "name": "Twitter Bootstrap v3",
+        "context": {
+            "academic": "",
+            "professional": "EQS Gobal",
+            "private": true
+        }
+    },
+    {
+        "name": "PDFMake (JS)",
+        "context": {
+            "academic": "",
+            "professional": "EQS Global and Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "JSPDF",
+        "context": {
+            "academic": "",
+            "professional": "EQS Global",
+            "private": true
+        }
+    },
+    {
+        "name": "jQuery",
+        "context": {
+            "academic": "HTML5 Course (ISPGAYA) and Master Degree (ISEP).",
+            "professional": "CimpleCare, Improxy, EQS Global",
+            "private": true
+        }
+    },
+    {
+        "name": "EF Core",
+        "context": {
+            "academic": "",
+            "professional": "B-SIMPLE",
+            "private": false
+        }
+    },
+    {
+        "name": "ASP.NET Core Web API",
+        "context": {
+            "academic": "",
+            "professional": "B-SIMPLE",
+            "private": false
+        }
+    },
+    {
+        "name": "ASP.NET",
+        "context": {
+            "academic": "",
+            "professional": "Improxy",
+            "private": false
+        }
+    },
+    {
+        "name": "VB.NET",
+        "context": {
+            "academic": "",
+            "professional": "Improxy",
+            "private": false
+        }
+    },
+    {
+        "name": "Silverlight 5",
+        "context": {
+            "academic": "Silverlight 5 Course (ISPGAYA)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "PrimeFaces UI",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "JSF (Java Server Faces)",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "",
+            "private": false
+        }
+    }
+]

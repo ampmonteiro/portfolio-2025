@@ -1,0 +1,43 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<details>
+    <summary>
+        {title}
+    </summary>
+    <slot />
+</details>
+
+<style>
+    details {
+        /* background-color: var(--bg-dark-mode); */
+        padding-inline: 1rem;
+        margin-block: 2rem;
+    }
+
+    summary {
+        cursor: pointer;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+        background-color: var(--bg-color-secundary);
+    }
+
+    summary::marker,
+    summary::-webkit-details-marker {
+        /* color: var(--color-secundary); */
+    }
+
+    @media only screen and (min-width: 1200px) {
+        details {
+            /* background-color: var(--bg-dark-mode); */
+            padding-inline: 0.7rem;
+        }
+    }
+</style>

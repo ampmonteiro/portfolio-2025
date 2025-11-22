@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Docker",
+        "context": {
+            "academic": "",
+            "professional": "Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "HTML",
+        "context": {
+            "academic": "CET Course (ISMAI), Degree (ISPGAYA), HTML5 Course (ISPGAYA) and Master Degree (ISEP)",
+            "professional": "Improxy, EQS Global, B-Simple and Inventore",
+            "private": true
+        }
+    },
+    {
+        "name": "HTML5",
+        "context": {
+            "academic": "HTML5 Course (ISPGAYA), Thesis of Master Degree (ISEP), Multimedia Tech (IEFP / AEP)",
+            "professional": " B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "CSS",
+        "context": {
+            "academic": "CET Course (ISMAI), Degree (ISPGAYA), HTML5 Course (ISPGAYA), Thesis of Master Degree (ISEP), Multimedia Tech (IEFP / AEP)",
+            "professional": "CimpleCare, Improxy, EQS Global, B-Simple, Inventore, NomadTech",
+            "private": true
+        }
+    },
+    {
+        "name": "CSS3",
+        "context": {
+            "academic": " HTML5 Course (ISPGAYA), Thesis of Master Degree (ISEP), Multimedia Tech (IEFP / AEP)",
+            "professional": "B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "JavaScript( ES5 )",
+        "context": {
+            "academic": "HTML5 Course (ISPGAYA), Thesis of Master Degree (ISEP), Multimedia Tech (IEFP / AEP)",
+            "professional": "CimpleCare, Improxy, EQS Global, B-Simple, Inventore, NomadTech",
+            "private": true
+        }
+    },
+    {
+        "name": "JavaScript( ES2015+ )",
+        "context": {
+            "academic": "",
+            "professional": " B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "PHP",
+        "context": {
+            "academic": "CET Course (ISMAI), Degree (ISPGAYA)",
+            "professional": "EQS Global, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "AJAX",
+        "context": {
+            "academic": "Multimedia Tech (IEFP / AEP)",
+            "professional": "CimpleCare, EQS Global, B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "JSON",
+        "context": {
+            "academic": "Multimedia Tech (IEFP / AEP)",
+            "professional": "CimpleCare, EQS Global, B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "XML",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "MySQL",
+        "context": {
+            "academic": "CET Course (ISMAI), Degree (ISPGAYA), Master Degree (ISEP)",
+            "professional": "Inventore, NomadTech",
+            "private": false
+        }
+    },
+    {
+        "name": "T-SQL",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "B-Simple ",
+            "private": false
+        }
+    },
+    {
+        "name": "C#",
+        "context": {
+            "academic": "Silverlight 5 Course (ISPGAYA), Master Degree (ISEP)",
+            "professional": "B-Simple",
+            "private": false
+        }
+    },
+    {
+        "name": "PostgreSQL",
+        "context": {
+            "academic": "",
+            "professional": "EQS Global, Radio Popular",
+            "private": false
+        }
+    },
+    {
+        "name": "Oracle PL/SQL",
+        "context": {
+            "academic": "",
+            "professional": "CimpleCare",
+            "private": false
+        }
+    },
+    {
+        "name": "JAVA",
+        "context": {
+            "academic": " Degree (ISPGAYA), Master Degree (ISEP)",
+            "professional": "",
+            "private": false
+        }
+    }
+]

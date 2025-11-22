@@ -1,0 +1,79 @@
+[
+    {
+        "company": "Radio Popular",
+        "title": "Web Developer",
+        "period": "Jul 2023 - Current",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL, JSON, AJAX",
+        "frameworks": "Twitter Bootstrap v5, FontAwesome, CodeIgniter, Laravel, jQuery, SASS",
+        "pkg": "NPM (for JavaScript), Composer (For PHP)",
+        "db": "PostgreSQL",
+        "software": "VS Code, Docker, HttPie(testing API), Antares (a DB GUI)",
+        "vcs": "Git + GitLab"
+    },
+    {
+        "company": "Nomad Tech, CP - Portuguese Railways & Nomad Digital Joint Venture",
+        "title": "Software Engineer",
+        "period": "Nov 2021 - Nov 2022 (1 year)",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL, JSON, AJAX",
+        "frameworks": "TypeScript, RxJS, Angular (11 up to 13), Twitter Bootstrap v4, PrimeNG, Fontawsome, SlimPHP (v3)",
+        "pkg": "NPM (for JavaScript), Composer (For PHP)",
+        "db": "MySQL",
+        "software": "VS Code, Insomnia, HeidiSQL",
+        "vcs": "Git + Bitbucket"
+    },
+    {
+        "company": "Inventore",
+        "title": "Web Developer",
+        "period": "Mar 2018 - Mar 2021 (3 years) ",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL, JSON",
+        "frameworks": "Angular (5 up to 8) , TypeScript, RxJS, Twitter Bootstrap v4, Angular Material, MomentJS, FlightPHP",
+        "pkg": "NPM (for JavaScript), Composer (For PHP)",
+        "db": "MySQL",
+        "software": "VS Code, Postman, Insomnia, MySQL Workbench",
+        "vcs": "Git + Gitlab"
+    },
+    {
+        "company": "B-Simple",
+        "title": "Web Developer",
+        "period": "Mar 2017 - Aug 2017 (6 Months)",
+        "tech": "HTML, CSS, JavaScript, , C#, SQL (T-SQL), LINQ, JSON",
+        "frameworks": "TypeScript, RxJS, Angular (v2 / v4), Twitter Bootstrap v4, Microsoft ASP.NET Core Web API, EF Core (Entity Framework)",
+        "pkg": "NPM (for JavaScript), NuGet (For C#)",
+        "db": "MS SQL Server",
+        "vcs": "Microsoft TFS",
+        "software": "VS 2017, VSCode, MS SQL Management studio, Postman"
+    },
+    {
+        "company": "EQS Global",
+        "title": "Web Developer",
+        "period": "Apr 2016 - Sept 2016 (6 Months)",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL, JSON, AJAX",
+        "frameworks": "jQuery, Twitter Bootstrap v3, JSPDF",
+        "pkg": "",
+        "db": "PostgreSQL",
+        "vcs": "",
+        "software": "Atom, PhpPgAdmin"
+    },
+    {
+        "company": "Improxy",
+        "title": "Web Developer ( Front-end )",
+        "period": "Jul 2013 - Jun 2014 ( 1 Year)",
+        "tech": "HTML, CSS, JavaScript, VB",
+        "frameworks": "ASP.NET, VB.NET, jQuery",
+        "pkg": "",
+        "db": "PostgreSQL",
+        "vcs": "Turtoise SVN",
+        "software": "VS 2012"
+    },
+    {
+        "company": "CimpleCare",
+        "title": "Web Developer",
+        "period": "Mar 2012 - Jul 2012 (5 Months)",
+        "tech": "HTML, CSS, JavaScript, AJAX, JSON, SQL (PL/SQL)",
+        "frameworks": "jQuery",
+        "pkg": "",
+        "db": "Oracle",
+        "vcs": "",
+        "software": "Oracle SQL Developer"
+    }
+]

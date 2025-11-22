@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Antares",
+        "context": {
+            "academic": "",
+            "professional": "Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "HeidiSQL",
+        "context": {
+            "academic": "",
+            "professional": "NomadTech",
+            "private": false
+        }
+    },
+    {
+        "name": "Insomnia",
+        "context": {
+            "academic": "",
+            "professional": "Inventore, NomadTech",
+            "private": true
+        }
+    },
+    {
+        "name": "Postman",
+        "context": {
+            "academic": "",
+            "professional": " B-Simple, Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "Visual Studio Code",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "Microsoft Visual Studio",
+        "context": {
+            "academic": "ISEP",
+            "professional": "Improxy, B-Simple",
+            "private": false
+        }
+    },
+    {
+        "name": "Microsoft Sql Server Management Studio",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "B-Simple, Improxy",
+            "private": false
+        }
+    },
+    {
+        "name": "MySQL Workbench ",
+        "context": {
+            "academic": "Degree (ISPGAYA, Master Degree (ISEP)",
+            "professional": "Inventore",
+            "private": false
+        }
+    },
+    {
+        "name": "PHP MyAdmin",
+        "context": {
+            "academic": "CET Course (ISMAI), Degree (ISPGAYA) and Master Degree (ISEP)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Atom",
+        "context": {
+            "academic": "Master Degree (ISEP)",
+            "professional": "EQS Global",
+            "private": true
+        }
+    },
+    {
+        "name": "NetBeans",
+        "context": {
+            "academic": "Degree (ISPGAYA)",
+            "professional": "Inventore ",
+            "private": false
+        }
+    },
+    {
+        "name": "Eclipse",
+        "context": {
+            "academic": "Master Degree (ISPGAYA)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Blender3D",
+        "context": {
+            "academic": "Master Degree (ISPGAYA)",
+            "professional": "",
+            "private": true
+        }
+    },
+    {
+        "name": "Adobe DreamWeaver ",
+        "context": {
+            "academic": "CET Course (ISMAI)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Adobe Premiere",
+        "context": {
+            "academic": "CET Course (ISMAI) and Multimedia Tech (IEFP / AEP)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Adobe After Effects",
+        "context": {
+            "academic": "CET Course (ISMAI) and Multimedia Tech (IEFP / AEP)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Adobe Illustrator",
+        "context": {
+            "academic": "CET Course (ISMAI) and Multimedia Tech (IEFP / AEP)",
+            "professional": "",
+            "private": false
+        }
+    },
+    {
+        "name": "Adobe Photoshop",
+        "context": {
+            "academic": "CET Course (ISMAI) and Multimedia Tech (IEFP / AEP)",
+            "professional": "",
+            "private": false
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "NPM (JS)",
+        "context": {
+            "academic": "Multimedia Tech (IEFP / AEP)",
+            "professional": "B-Simple, Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "Composer (PHP)",
+        "context": {
+            "academic": "",
+            "professional": "Inventore, NomadTech, Radio Popular",
+            "private": true
+        }
+    },
+    {
+        "name": "NuGet (C#) ",
+        "context": {
+            "academic": "",
+            "professional": "B-Simple",
+            "private": false
+        }
+    }
+]

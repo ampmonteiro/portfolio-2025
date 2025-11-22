@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    '/src/assets/img/*.{jpeg,jpg,png}',
+);
+---
+
+<Layout title={frontmatter.title}>
+    <article class="container">
+        <section>
+            <div>
+                <slot />
+            </div>
+            <a href={frontmatter.see} title="More Details">
+                <Image
+                    src={images[frontmatter.image.url]()}
+                    alt={frontmatter.title}
+                />
+            </a>
+        </section>
+        <p>
+            <a
+                class="btn btn-outline"
+                href={frontmatter.see}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Let's see &#187;
+            </a>
+        </p>
+    </article>
+</Layout>
+
+<style>
+    article {
+        background-color: var(--bg-color-primary);
+    }
+
+    img {
+        max-width: 60%;
+        object-fit: contain;
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        padding: 1.5rem;
+    }
+
+    section a {
+        display: contents;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 101ch;
+        flex-grow: 2;
+    }
+
+    /* Tablet */
+    @media only screen and (min-width: 900px) {
+        section {
+            flex-wrap: nowrap;
+        }
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        padding-block: 1rem;
+    }
+</style>

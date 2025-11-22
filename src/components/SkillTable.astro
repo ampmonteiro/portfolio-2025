@@ -1,0 +1,100 @@
+---
+export interface Props {
+    values: {
+        name: string;
+        context: {
+            academic: string;
+            professional: string;
+            private: boolean;
+        };
+    }[];
+}
+
+const { values } = Astro.props;
+---
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Context</th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            values.map(({ name, context }) => (
+                <tr>
+                    <td>{name}</td>
+                    <td>
+                        {context.academic && (
+                            <p>
+                                <strong>Academic project to</strong>:
+                                {context.academic}
+                            </p>
+                        )}
+
+                        {context.professional && (
+                            <p>
+                                <strong>
+                                    Professional projects to:
+                                </strong>
+
+                                {context.professional}
+                            </p>
+                        )}
+
+                        {context.private && (
+                            <p>
+                                <strong>Private Projects</strong>
+                            </p>
+                        )}
+                    </td>
+                </tr>
+            ))
+        }
+    </tbody>
+</table>
+
+<style>
+    p {
+        line-height: 1.5;
+        max-width: 90ch;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-block-start: 0.2rem;
+    }
+
+    thead {
+        text-align: left;
+        font-size: 1.8rem;
+        background-color: var(--bg-color-primary);
+    }
+
+    th {
+        font-weight: 600;
+        padding-block: 1rem;
+        padding-inline-start: 3.4rem;
+    }
+
+    td {
+        padding-block: 1rem;
+        padding-inline-start: 3.4rem;
+        font-size: 1.6rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--bg-color-primary);
+    }
+
+    th:first-of-type {
+        width: 15%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        th:first-of-type {
+            width: 25%;
+        }
+    }
+</style>

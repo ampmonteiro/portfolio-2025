@@ -1,0 +1,30 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Accordion from '@components/Accordion.astro';
+import SkillTable from '@components/SkillTable.astro';
+
+import tech from '@json/tech.json';
+import frameworks from '@json/fameworks.json';
+import pkgs from '@json/pkgs.json';
+import soft from '@json/software.json';
+---
+
+<Layout title="Skills">
+    <article class="container">
+        <Accordion title="Technologies (for Web and other kind)">
+            <SkillTable values={tech} />
+        </Accordion>
+
+        <Accordion title="Frameworks | Libraries | API">
+            <SkillTable values={frameworks} />
+        </Accordion>
+
+        <Accordion title="Packager Managers">
+            <SkillTable values={pkgs} />
+        </Accordion>
+
+        <Accordion title="Software">
+            <SkillTable values={soft} />
+        </Accordion>
+    </article>
+</Layout>

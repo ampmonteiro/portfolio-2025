@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Let's Learn Laravel: A Guided Path For Beginners",
+        "school": " Udemy",
+        "year": 2023
+    },
+    {
+        "title": "Symfony 6 Framework Hands-On 2023",
+        "school": " Udemy",
+        "year": 2023
+    },
+    {
+        "title": "JavaScript Unit Testing - The Practical Guide",
+        "school": " Udemy",
+        "year": 2022
+    },
+    {
+        "title": "Composer - The Ultimate Guide for PHP Dependency Management",
+        "school": "Udemy",
+        "year": 2022
+    },
+    {
+        "title": "CodeIgniter 4: Build a Complete Web Application from Scratch",
+        "school": "Udemy",
+        "year": 2022
+    },
+    {
+        "title": "APIs in PHP: from Basic to Advance",
+        "school": "Udemy",
+        "year": 2022
+    },
+    {
+        "title": "Vue - Complete Vue Mastery (W/ VUEX, COMPOSITION API, ROUTER)",
+        "school": "Udemy",
+        "year": 2022
+    },
+    {
+        "title": "The Ultimate Docker Course ",
+        "school": "CodeWithMosh",
+        "year": 2021
+    },
+    {
+        "title": "Vue - The Complete Guide (W/ ROUTER, VUEX, COMPOSITION API) ",
+        "school": " Udemy",
+        "year": 2021
+    },
+    {
+        "title": "Angular - The Complete Guide (2021 Edition) ",
+        "school": "Udemy",
+        "year": 2021
+    },
+    {
+        "title": "CSS - the complete guide 2020 (Incl. FLEXBOX, GRID & SASS) ",
+        "school": "Udemy",
+        "year": 2020
+    },
+    {
+        "title": "JavaScript - The complete guide 2020",
+        "school": "Udemy",
+        "year": 2019
+    },
+    {
+        "title": "Multimedia Tech course - Vida Ativa Program",
+        "school": "IEFP / AEP",
+        "year": 2016
+    },
+    {
+        "title": "HTML5 Course - 3ª Ed.",
+        "school": "ISGAYA",
+        "year": 2014
+    },
+    {
+        "title": "Microsoft Silverlight 5 Course - 1ª Ed.",
+        "school": "ISGAYA",
+        "year": 2013
+    }
+]

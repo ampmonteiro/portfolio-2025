@@ -1,0 +1,113 @@
+---
+import { Image } from 'astro:assets';
+import type { MarkdownInstance } from 'astro';
+
+import Layout from '@layouts/Layout.astro';
+
+interface Frontmatter {
+    layout: string;
+    title: string;
+    image: {
+        url: string;
+    };
+    see?: string;
+    order: number;
+}
+
+const all = Object.values(
+    import.meta.glob<MarkdownInstance<Frontmatter>>('./*.md', {
+        eager: true,
+    }),
+).sort((a, b) => b.frontmatter.order - a.frontmatter.order);
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    '/src/assets/img/*.{jpeg,jpg,png}',
+);
+---
+
+<Layout title="Projects">
+    <section class="container">
+        {
+            all.map(({ frontmatter, url }) => (
+                <article>
+                    <a href={url} title="More Details">
+                        <Image
+                            src={images[frontmatter.image.url]()}
+                            alt={frontmatter.title}
+                        />
+                    </a>
+
+                    <p>{frontmatter.title}</p>
+                    <a class="btn btn-outline" href={url}>
+                        Details &#187;
+                    </a>
+                </article>
+            ))
+        }
+    </section>
+</Layout>
+
+<style>
+    img {
+        display: block;
+        width: 100%;
+        object-fit: fill;
+        height: 64%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color-primary);
+        justify-content: space-between;
+        align-items: center;
+        max-width: 60rem;
+        margin-block-end: 3rem;
+    }
+
+    article a {
+        margin-bottom: 1rem;
+    }
+
+    article a:first-of-type {
+        display: contents;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 810px) {
+        section {
+            align-items: unset;
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(40rem, 1fr)
+            );
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        article {
+            max-width: unset;
+        }
+    }
+
+    @media only screen and (min-width: 1020px) {
+        section {
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(30rem, 1fr)
+            );
+            gap: 3rem;
+            margin-block-end: unset;
+        }
+
+        article {
+            height: 30rem;
+        }
+    }
+</style>
