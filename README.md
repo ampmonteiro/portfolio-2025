@@ -2,7 +2,7 @@
 
 My new website / portfolio, version 2025, using new technologies base on JavaScript / Nodejs, using Astrojs
 
-[Link](https://)
+[Hosted on Netlify](https://ampmonteiro-2025.netlify.app/)
 
 ## Goals
 
@@ -25,6 +25,85 @@ My new website / portfolio, version 2025, using new technologies base on JavaScr
 
 - AstroJS 
 
+## 🚀 Project Structure
+
+Inside of your Astro project, beside recommend folders, 
+
+was added: json folder and assets folder:
+
+```
+/
+├── public/
+│   └── favicon.svg
+
+├── src/
+│   ├── assets/                # images, icons, fonts
+│   ├── components/
+│   │   ├── AboutCourseList.astro
+│   │   ├── AboutInfo.astro
+│   │   ├── AboutWorkList.astro
+│   │   ├── Accordion.astro
+│   │   ├── Card.astro
+│   │   ├── Footer.astro
+│   │   ├── Menu.astro
+│   │   └── SkillTable.astro
+│   │
+│   ├── json/
+│   │   ├── cert.json
+│   │   ├── edu.json
+│   │   ├── frameworks.json
+│   │   ├── me.json
+│   │   ├── pkgs.json
+│   │   ├── software.json
+│   │   ├── tech.json
+│   │   └── work.json
+│   │
+│   ├── layouts/
+│   │   ├── Layout.astro
+│   │   └── MdProjectLayout.astro
+│   │
+│   ├── styles/                # Global CSS
+│   │
+│   └── pages/
+│       ├── index.astro
+│       ├── about-me.astro
+│       ├── social.astro
+│       ├── skills.astro
+│       │
+│       └── projects/
+│           ├── index.astro
+│           ├── [name-of-poject].md
+│
+└── package.json
+```
+
+##  Structure [name-of-poject].md
+
+this file has the follow info that it is needed to be filled:
+
+```
+---
+layout: ../../layouts/MdProjectLayout.astro
+title: ''
+image:
+  url: '/src/assets/img/
+see: 'https://'
+order: 1
+---
+
+Description
+
+**The goal of this projects is**: 
+
+
+
+**Technologies**:
+
+
+**Frameworks | Libraries | API**:
+
+
+```
 
 ## images
 
